@@ -26,7 +26,7 @@ const CodelyBackoffice = {
    * Create user form
    ******************************************************************************************************************/
   initUserForm() {
-    function validateBio() {
+    function validateBio(): boolean {
       const field = document.getElementById("bio");
       const fieldLength = field.value.length;
       const isValid = fieldLength > 0 && field.value.length <= 15;
