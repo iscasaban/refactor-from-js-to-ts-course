@@ -11,7 +11,7 @@ const CodelyBackoffice = {
     /**
      * Count character in selected fields
      */
-    const form_field = document.querySelector(".js-form-control");
+    const form_field = document.querySelector(".js-form-control") as any;
 
     const counter = document.querySelector(".js-count-content");
     const char_counter_container = counter.querySelector(".js-count-chars");
@@ -27,7 +27,7 @@ const CodelyBackoffice = {
    ******************************************************************************************************************/
   initUserForm() {
     function validateBio(): boolean {
-      const field = document.getElementById("bio");
+      const field = document.getElementById("bio") as any;
       const fieldLength = field.value.length;
       const isValid = fieldLength > 0 && field.value.length <= 15;
 
